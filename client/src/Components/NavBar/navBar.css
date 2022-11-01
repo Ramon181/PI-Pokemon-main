@@ -1,0 +1,109 @@
+.navBar {
+  margin-top: -10px;
+  margin-left: 56px;
+    font-family: Arnoldboecklin, fantasy;;
+    font-family: serif;
+    font-size: 1em;
+    z-index: -10;
+  }
+
+  p {
+    color: rgb(0, 0, 0);
+    font-family: URW Chancery L, cursive;
+  }
+  
+  .logo {
+    margin-top: 5px;
+  }
+  
+  .ing_nav{
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+  }
+  
+  .logo p {
+    display: inline-block;
+    position: relative;
+    top: -35px;
+    left: -10px;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+  }
+  
+  main {
+    position: relative;
+    width: 75%;
+  }
+  
+  .breadcrumbs {
+    position: relative;
+    z-index: 5;
+  }
+  
+  .breadcrumbs .nott, .last-crumb {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: URW Chancery L, cursive;
+    font-weight: bold;
+    background-color: lightgray;
+    margin: 5px 15px;
+    padding: 5px 10px;
+    border-top: 2px solid rgb(29, 29, 29);
+    border-bottom: 2px solid rgb(10, 10, 10);
+  }
+  
+  .breadcrumbs .nott::before {
+    position: absolute;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: lightgray;
+    content: "";
+    left: -10%;
+    top: -2px;
+    height: 100%;
+    width: 90%;
+    -webkit-transform: skewX(-27deg);
+    -moz-transform: skewX(-27deg);
+    -ms-transform: skewX(-27deg);
+    transform: skewX(-27deg);
+    z-index: -2;
+  }
+  
+  .breadcrumbs .nott::after {
+    position: absolute;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: lightgray;
+    content: "";
+    right: -15%;
+    top: -2px;
+    height: 100%;
+    width: 90%;
+    -webkit-transform: skewX(-27deg);
+    -moz-transform: skewX(-27deg);
+    -ms-transform: skewX(-27deg);
+    transform: skewX(-27deg);
+    z-index: -2;
+  }
+  
+  .breadcrumbs .last-crumb {
+    background-color: rgb(0, 0, 0);
+    color: lightgray;
+  }
+  
+  .breadcrumbs .last-crumb::before {
+    position: absolute;
+    border: 2px solid #00a98f;
+    background-color: #00a98f;
+    content: "";
+    left: -9%;
+    top: -2px;
+    height: 100%;
+    width: 90%;
+    -webkit-transform: skewX(-27deg);
+    -moz-transform: skewX(-27deg);
+    -ms-transform: skewX(-27deg);
+    transform: skewX(-27deg);
+    z-index: -1;
+  }

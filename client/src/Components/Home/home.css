@@ -1,0 +1,16 @@
+.home_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cards_body{
+    background-color: #333333;
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    width: 80%;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 4px;
+}

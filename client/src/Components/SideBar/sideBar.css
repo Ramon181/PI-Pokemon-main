@@ -1,0 +1,116 @@
+.custom-radios {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+}
+
+.custom-radios div {
+  display: inline-block;
+}
+
+.custom-radios .input[type=radio] {
+  display: none;
+}
+
+.custom-radios .input[type=radio]+label {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.custom-radios .input[type=radio]+label span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  text-decoration: #333;
+  line-height: 44px;
+  margin: 7.6px;
+}
+
+.custom-radios .input[type=radio]+label span img {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.custom-radios .input[type=radio]#fairy+label span {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg/1024px-Pok%C3%A9mon_Fairy_Type_Icon.svg.png);
+  background-size: cover;
+  background-color: rgb(196, 196, 196);
+}
+
+.custom-radios .input[type=radio]#water+label span {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg/1024px-Pok%C3%A9mon_Water_Type_Icon.svg.png);
+  background-size: cover;
+  background-color: rgb(196, 196, 196);
+}
+
+.custom-radios .input[type=radio]#flying+label span {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Pok%C3%A9mon_Flying_Type_Icon.svg/1200px-Pok%C3%A9mon_Flying_Type_Icon.svg.png);
+  background-size: cover;
+  background-color: rgb(196, 196, 196);
+}
+
+.custom-radios .input[type=radio]#fire+label span {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pok%C3%A9mon_Fire_Type_Icon.svg/2048px-Pok%C3%A9mon_Fire_Type_Icon.svg.png);
+  background-color: rgb(194, 194, 194);
+  background-size: cover;
+}
+
+.custom-radios .input[type=radio]#poison+label span {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/1024px-Pok%C3%A9mon_Poison_Type_Icon.svg.png);
+  background-color: rgb(194, 194, 194);
+  background-size: cover;
+}
+
+.custom-radios .input[type=radio]#ground+label span {
+  background-image: url(data:image/png;base64,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);
+  background-color: rgb(194, 194, 194);
+  background-size: cover;
+}
+
+.custom-radios .input[type=radio]#electric+label span {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Pok%C3%A9mon_Electric_Type_Icon.svg/2048px-Pok%C3%A9mon_Electric_Type_Icon.svg.png);
+  background-color: rgb(194, 194, 194);
+  background-size: cover;
+}
+
+.custom-radios .input[type=radio]#grass+label span {
+  background-image: url(https://storage.googleapis.com/nianticweb-media/pokemongo/types/grass.png);
+  background-color: rgb(194, 194, 194);
+  background-size: cover;
+}
+
+.custom-radios .input[type=radio]#bug+label span {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Pok%C3%A9mon_Bug_Type_Icon.svg/2048px-Pok%C3%A9mon_Bug_Type_Icon.svg.png);
+  background-color: rgb(194, 194, 194);
+  background-size: cover;
+}
+
+.custom-radios .input[type=radio]#normal+label span {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Pok%C3%A9mon_Normal_Type_Icon.svg/1200px-Pok%C3%A9mon_Normal_Type_Icon.svg.png);
+  background-color: rgb(194, 194, 194);
+  background-size: cover;
+}
+.custom-radios .input[type=radio]#all+label span {
+  background-image: url(https://img.icons8.com/color/344/compass-pokemon.png);
+  background-color: rgb(194, 194, 194);
+  background-size: cover;
+}
+
+.custom-radios .input[type=radio]:checked+label span img {
+  opacity: 1;
+}
