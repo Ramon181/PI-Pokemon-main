@@ -57,7 +57,7 @@ const Details = () => {
                                         {
                                             pokemon.types?.map(e => {
                                                 return (
-                                                    <img key={e.name} src={require(`./img/${e.name}.png`).default} title={e.name} alt='' width='30px' height='30px' />
+                                                    <img key={e.name} src={require(`./img/${e.name}.png`)} title={e.name} alt='' width='30px' height='30px' />
                                                 )
                                             })
                                         }

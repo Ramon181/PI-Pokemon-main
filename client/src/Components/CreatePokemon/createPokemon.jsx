@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { postPokemon } from '../../Redux/Action';
 import './createPokemon.css'
 
 const CreatePokemon = () => {
 
     const dispatch = useDispatch();
-    const history = useHistory()
+    const navegate = useNavigate()
 
     const [name, setName] = useState('');
     const [image, setImage] = useState('');
@@ -52,7 +52,7 @@ const CreatePokemon = () => {
             setWeight(0);
             setHeight(0);
             setTypes([])
-            history.push('/home')
+            navegate('/home')
         }else{
             alert('Invalid Data')
         }
